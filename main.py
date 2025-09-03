@@ -33,10 +33,10 @@ if "chat_session" not in st.session_state:
 if "file_content" not in st.session_state:
     st.session_state.file_content = None
 
-st.title("🤖 My Gemini Pro - ChatBot")
+st.title("🤖 Gemini Pro - ChatBot")
 
 # --- File Upload Section ---
-uploaded_file = st.file_uploader("📂 Upload a PDF, txt, or CSV file", type=["pdf", "txt", "csv"])
+uploaded_file = st.file_uploader("📂 Upload a PDF, TXT, or CSV file", type=["pdf", "txt", "csv"])
 if uploaded_file:
     if uploaded_file.type == "application/pdf":
         reader = PdfReader(uploaded_file)
